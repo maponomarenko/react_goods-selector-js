@@ -30,7 +30,7 @@ export const App = () => {
         className="delete ml-3"
         onClick={() => {
           setValue(noSelected);
-          setGoodState(null);
+          setGoodState('');
         }}
       />
     </h1>,
@@ -45,7 +45,7 @@ export const App = () => {
             <tr
               data-cy="Good"
               className={
-                goodState === good ? 'has-background-success-light' : null
+                goodState === good ? 'has-background-success-light' : ''
               }
             >
               <td>
@@ -56,7 +56,7 @@ export const App = () => {
                   onClick={() => {
                     if (goodState === good) {
                       setValue(noSelected);
-                      setGoodState(null);
+                      setGoodState('');
                     } else {
                       setGoodState(good);
                       setValue(
@@ -68,7 +68,7 @@ export const App = () => {
                             className="delete ml-3"
                             onClick={() => {
                               setValue(noSelected);
-                              setGoodState(null);
+                              setGoodState('');
                             }}
                           />
                         </h1>,
